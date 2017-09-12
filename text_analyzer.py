@@ -1,5 +1,4 @@
 input_file = open("text.txt", "r")
-output_file = open("output.txt", "w")
 
 r = input_file.read()
 
@@ -21,6 +20,3 @@ sort_2 = sorted(sort_1, key = lambda x:x[1], reverse=True)
 
 for key in sort_2:
     print (key)
-    output_file.write (str(key) + '\n')
-
-output_file.close()
